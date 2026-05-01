@@ -9,14 +9,17 @@ const STORE_FILE = path.join(DATA_DIR, "store.json");
 const TIMELINE_MONTHS = 10;
 
 const DEFAULT_TASK_LIBRARY = [
-  { id: "req", name: "Collect Requirements", color: "#2563eb" },
-  { id: "arch", name: "Architecture & Design", color: "#7c3aed" },
-  { id: "ui", name: "UI/UX Prototyping", color: "#db2777" },
-  { id: "backend", name: "Backend Development", color: "#059669" },
-  { id: "frontend", name: "Frontend Development", color: "#ea580c" },
-  { id: "qa", name: "Testing & QA", color: "#0891b2" },
-  { id: "deploy", name: "Deployment", color: "#4f46e5" },
-  { id: "docs", name: "Documentation & Handoff", color: "#0f766e" }
+  { id: "collect_requirement", name: "Collect Requirement", color: "#2563eb" },
+  { id: "architecture_design", name: "Architecture Design", color: "#7c3aed" },
+  { id: "ux_ui_prototyping", name: "UX/UI Prototyping", color: "#db2777" },
+  { id: "booking_feature", name: "Booking Feature", color: "#059669" },
+  { id: "bus_tracking_feature", name: "Bus Tracking Feature", color: "#0ea5e9" },
+  { id: "tu_auth_feature", name: "TU Auth Feature", color: "#ea580c" },
+  { id: "payment_featuer", name: "Payment Featuer", color: "#f59e0b" },
+  { id: "testing", name: "Testing", color: "#0891b2" },
+  { id: "product_launch", name: "Product Launch", color: "#4f46e5" },
+  { id: "documentation_handoff", name: "Documentation & Hand off", color: "#0f766e" },
+  { id: "maintenance", name: "Maintenance", color: "#64748b" }
 ];
 
 function ensureStore() {
