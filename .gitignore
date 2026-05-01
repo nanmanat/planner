@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Runtime / temp
+.DS_Store
+.env
+.env.*
+
+# Build output
+dist/
+build/
+coverage/
+
+# Local app data
+data/store.json

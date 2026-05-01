@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop Project Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <h1>Workshop Project Planner</h1>
+          <p>No login. Join with a username and start planning.</p>
+        </div>
+        <div id="joinSection" class="topbar-right">
+          <form id="joinForm" class="join-form topbar-join-form">
+            <input id="usernameInput" type="text" placeholder="Your username" maxlength="30" required />
+            <button type="submit">Join</button>
+          </form>
+          <p id="sessionInfo" class="muted"></p>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="panel left-panel">
+          <h2>Users</h2>
+          <ul id="usersList" class="users-list"></ul>
+        </section>
+
+        <section class="panel center-panel">
+          <div class="board-header">
+            <h2 id="boardTitle">Timeline Board</h2>
+            <p id="saveStatus" class="muted">Autosave ready</p>
+          </div>
+          <p class="muted">Drag tasks into the timeline. Drag a block to move it, drag its right handle to resize, double-click to remove.</p>
+
+          <div class="task-bank-wrapper">
+            <h3>Task Bank (Hard-Coded)</h3>
+            <div id="taskBank" class="task-bank"></div>
+          </div>
+
+          <div class="timeline-wrapper">
+            <div id="timelineHeader" class="timeline-header"></div>
+            <div id="timelineGrid" class="timeline-grid"></div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

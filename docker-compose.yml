@@ -1,0 +1,14 @@
+services:
+  workshop-planner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: workshop-planner
+    ports:
+      - "9123:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
